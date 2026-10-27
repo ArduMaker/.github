@@ -1,86 +1,102 @@
 <div align="center">
 
-# ArduMaker
+<img alt="ArduMaker | herramientas para desarrolladores" src="https://img.shields.io/badge/ARDUMAKER-DEVELOPER%20PLATFORM-1676D2?style=for-the-badge&labelColor=102238" />
 
-### Del código a producción, con un flujo de trabajo más claro.
+# 🚀 ArduMaker
 
-**Herramientas para desarrolladores, equipos y agentes de IA:** calidad de código, organización de proyectos e infraestructura en un mismo ecosistema.
+### Buen código. Trabajo ordenado. Infraestructura lista.
 
-[**Conocer el Code Checker**](https://ardumaker.com/checker/) · [**Organizar proyectos**](https://ardumaker.com/projects/) · [**Explorar los VPS**](https://ardumaker.com/) · [**Documentación**](https://ardumaker.com/docs/)
+**Una plataforma para quienes desarrollan software, colaboran con agentes de IA y necesitan llevar sus proyectos a producción.**
+
+[![Code Checker](https://img.shields.io/badge/🛡️_CODE_CHECKER-198_reglas-1676D2?style=for-the-badge)](https://ardumaker.com/checker/)
+[![Proyectos](https://img.shields.io/badge/📋_PROYECTOS-Gratis-14B8A6?style=for-the-badge)](https://ardumaker.com/projects/)
+[![VPS](https://img.shields.io/badge/☁️_VPS-Deploy_y_control-7C62DD?style=for-the-badge)](https://ardumaker.com/)
+
+[🌐 **Sitio web**](https://ardumaker.com/) &nbsp;·&nbsp; [📖 **Documentación**](https://ardumaker.com/docs/) &nbsp;·&nbsp; [🎬 **Tutoriales**](https://ardumaker.com/started/) &nbsp;·&nbsp; [🤖 **MCP para agentes**](https://ardumaker.com/mcp/)
 
 </div>
 
 ---
 
-## 01 · Code Checker: un estándar para escribir y entregar mejor código
+## 🛡️ 01 — Code Checker: primero, la calidad del código
 
-Un proyecto puede funcionar hoy y convertirse en un problema mañana. Archivos enormes, cambios sin pruebas, secretos en Git o commits imposibles de entender hacen que mantenerlo sea cada vez más difícil.
+> **¿Tu proyecto funciona, pero cada cambio cuesta más?** Revisar un repositorio no debería depender de acordarse de cien detalles antes de cada commit.
 
-**ArduMaker Code Checker** es una herramienta gratuita para revisar el código y el *formato de trabajo* de un repositorio. Aplica **198 reglas comprobables** sobre estructura, seguridad, convenciones, documentación, historial de Git y configuración.
+**ArduMaker Code Checker** revisa código y estándares de trabajo con **198 reglas comprobables**. Identifica problemas de estructura, formato, seguridad, documentación, configuraciones y hábitos de Git; explica qué encontró y dónde corregirlo.
 
-- **Detecta problemas concretos:** identifica la regla, el archivo, la ubicación y lo que se espera corregir.
-- **Revisa antes de publicar:** integra hooks de `pre-commit`, `commit-msg` y `pre-push`.
-- **Sirve para personas y agentes de IA:** genera reglas para `AGENTS.md` y ofrece resultados en JSON para agentes y CI.
-- **Se adapta a cada proyecto:** permite ajustar reglas, severidades, umbrales y excepciones justificadas.
-- **Ayuda a corregir:** `ardumaker fix` aplica las correcciones que pueden automatizarse.
+| 🔍 Encuentra | 🧠 Acompaña | ⚙️ Automatiza |
+| :--- | :--- | :--- |
+| Archivos demasiado grandes, problemas de organización, secretos y configuraciones riesgosas | Reglas entendibles para desarrolladores y agentes de IA | Hooks de Git, salida JSON, excepciones documentadas y correcciones automáticas disponibles |
 
 ```bash
-ardumaker init             # Prepara el repositorio y sus hooks de Git
-ardumaker check            # Revisa el proyecto
-ardumaker check --strict --json  # Salida estructurada para CI y agentes
+ardumaker init                  # Prepara el repositorio y los hooks
+ardumaker check                 # Revisa el proyecto
+ardumaker check --strict --json # Resultado estructurado para CI y agentes
 ```
 
-Gratuito con una cuenta de ArduMaker. Disponible para Linux y Windows de 64 bits. **No reemplaza las pruebas, el diseño ni las revisiones humanas.**
+<div align="center">
 
-**[Ver cómo funciona →](https://ardumaker.com/checker/)** · [Documentación técnica](https://ardumaker.com/docs/code-checker/)
+[![Probar Code Checker](https://img.shields.io/badge/PROBAR_CODE_CHECKER-GRATIS-1676D2?style=for-the-badge&logo=githubactions&logoColor=white)](https://ardumaker.com/checker/)
 
-## 02 · Proyectos: el trabajo también necesita orden
+<sub>Disponible para Linux y Windows de 64 bits. Complementa las pruebas y revisiones humanas; no las reemplaza.</sub>
 
-No alcanza con revisar el código si nadie sabe qué sigue, quién se ocupa o qué bloquea la entrega.
+</div>
 
-El **gestor de proyectos de ArduMaker** reúne tableros, etapas, tareas, checklists, dependencias, calendario, reuniones, notas y archivos. Permite organizar el trabajo en equipo, controlar permisos y vincular repositorios y servidores.
+## 📋 02 — Proyectos: porque el trabajo también importa
 
-Los agentes conectados por MCP pueden colaborar dentro de los permisos que se les autoricen; las acciones quedan registradas. **La gestión de proyectos es gratuita y no requiere contratar un VPS.**
+**Código ordenado + tareas claras = entregas más fáciles de mantener.**
 
-**[Conocer Proyectos →](https://ardumaker.com/projects/)**
+Organiza los proyectos de tu equipo con **Kanban, responsables, prioridades, checklists, dependencias, calendario, reuniones y archivos**. Vincula los repositorios y servidores con el trabajo; los agentes conectados por MCP colaboran dentro de los permisos que les otorgues.
 
-## 03 · VPS e infraestructura: del repositorio a un servicio real
+| 🗂️ Planificar | 👥 Colaborar | 🤖 Trabajar con IA |
+| :--- | :--- | :--- |
+| Etapas, tareas, fechas y dependencias | Roles, registros de actividad y contexto compartido | Crear, consultar y actualizar tareas mediante MCP con controles de acceso |
 
-Cuando el proyecto está listo, ArduMaker permite **crear y administrar servidores VPS** y operar lo necesario para publicar una web, una API o una automatización:
+**El gestor de proyectos es gratuito:** no necesitas contratar un VPS.
 
-| Infraestructura | Herramientas |
-| --- | --- |
-| **Servidores y despliegues** | VPS Linux, terminal web, SSH, Docker, despliegues desde GitHub y redeploy |
-| **Web y dominios** | Nginx, DNS, certificados SSL, WordPress y WooCommerce |
-| **Datos y automatización** | PostgreSQL, MySQL, Redis, n8n y copias de seguridad |
-| **Agentes de IA** | MCP con permisos, auditoría, Router IA y API de búsqueda |
-| **Trabajo y comunicación** | Proyectos, correo con dominio propio y reuniones |
+**[🟢 Abrir gestor de proyectos →](https://ardumaker.com/projects/)**
 
-La idea no es sumar herramientas por sumar: es que **un desarrollador pueda revisar su código, coordinar tareas, desplegarlo y administrar su infraestructura** con menos pasos y más control.
+## ☁️ 03 — VPS: del repositorio a producción
 
-**[Explorar ArduMaker →](https://ardumaker.com/)** · [Ver tutoriales cortos](https://ardumaker.com/started/) · [MCP para agentes](https://ardumaker.com/mcp/)
+Ya tienes el código y las tareas. Ahora necesitas ejecutarlo, publicar la aplicación y mantenerla funcionando.
 
----
+| 🚀 Servidores y deploy | 🌐 Web y datos | 🔌 Automatización e IA |
+| :--- | :--- | :--- |
+| VPS Linux, SSH, terminal, GitHub y Docker | Dominios, Nginx, SSL, WordPress, PostgreSQL, MySQL y Redis | n8n, MCP, Router IA y herramientas para operar servicios |
 
-## Empieza por donde lo necesites
+**Menos pasos entre el código, el despliegue y el mantenimiento.** Tu aplicación y su infraestructura, desde un mismo ecosistema.
 
-| Quiero… | Empezar aquí |
-| --- | --- |
-| Revisar la calidad de mi código y mis commits | [Code Checker](https://ardumaker.com/checker/) |
-| Organizar tareas, fechas y entregas | [Gestor de proyectos](https://ardumaker.com/projects/) |
-| Publicar mi primera web | [Guía paso a paso](https://ardumaker.com/start/) |
-| Desplegar aplicaciones y gestionar servidores | [Plataforma VPS](https://ardumaker.com/) |
-| Conectar Claude u otros agentes mediante MCP | [MCP de ArduMaker](https://ardumaker.com/mcp/) |
-| Entender cada herramienta con ejemplos | [Videos Started](https://ardumaker.com/started/) y [docs](https://ardumaker.com/docs/) |
-
-> **Nuestro enfoque:** código comprobable, trabajo ordenado e infraestructura bajo control. Cada parte puede usarse según lo que necesites.
-
-### About ArduMaker · English
-
-ArduMaker brings together a **free code quality checker**, **project management** and **VPS infrastructure** for developers, teams and AI agents. Review code with Git hooks and machine-readable results, coordinate your work, then deploy and manage services with GitHub and MCP.
-
-[Website](https://ardumaker.com/) · [Code Checker](https://ardumaker.com/checker/) · [Documentation](https://ardumaker.com/docs/)
+**[🔵 Explorar infraestructura y VPS →](https://ardumaker.com/)**
 
 ---
 
-**Contacto:** [developer@ardumaker.com](mailto:developer@ardumaker.com) · **Web:** [ardumaker.com](https://ardumaker.com/)
+## 🧭 ¿Por dónde empiezo?
+
+| Si necesitas… | Empieza aquí |
+| :--- | :--- |
+| 🛡️ Revisar código, commits y reglas del repositorio | [**Code Checker**](https://ardumaker.com/checker/) |
+| 📋 Organizar el trabajo de tu equipo o agentes | [**Proyectos**](https://ardumaker.com/projects/) |
+| 🧪 Publicar una primera web y aprender el proceso | [**Ejemplo start_web**](https://github.com/ArduMaker/start_web) |
+| ☁️ Desplegar un backend, una web o una automatización | [**VPS ArduMaker**](https://ardumaker.com/) |
+| 🤖 Conectar tus agentes de IA | [**MCP y documentación**](https://ardumaker.com/docs/) |
+| 🎬 Ver herramientas en funcionamiento | [**Guías y videos cortos**](https://ardumaker.com/started/) |
+
+<div align="center">
+
+### 💙 Pensado para desarrolladores independientes, equipos y creadores
+
+**Revisa el código → organiza el trabajo → despliega → mejora.**
+
+[![GitHub](https://img.shields.io/badge/GitHub-ArduMaker-102238?style=flat-square&logo=github)](https://github.com/ArduMaker)
+[![Web](https://img.shields.io/badge/Web-ardumaker.com-1676D2?style=flat-square)](https://ardumaker.com/)
+[![Docs](https://img.shields.io/badge/Docs-Ver_documentación-14B8A6?style=flat-square)](https://ardumaker.com/docs/)
+
+</div>
+
+---
+
+### 🌍 About ArduMaker · English
+
+ArduMaker brings together a **free code quality checker**, **project management**, and **VPS infrastructure** for developers, teams and AI agents. Check your code, coordinate your work, and deploy applications with GitHub and MCP.
+
+[Website](https://ardumaker.com/) · [Code Checker](https://ardumaker.com/checker/) · [Projects](https://ardumaker.com/projects/) · [Docs](https://ardumaker.com/docs/)
